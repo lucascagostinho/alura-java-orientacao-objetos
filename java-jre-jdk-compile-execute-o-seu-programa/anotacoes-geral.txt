@@ -1,0 +1,213 @@
+1 - O que é Java
+
+O grande benefício de uma Máquina Virtual Java (JVM), é executar o código independente do sistema operacional. Ou seja, no mundo Java você terá sempre o mesmo "executável"
+ou Bytecode que será executado pela Maquina Virtual Java, totalmente independente do sistema operacional. Assim não é preciso rescrever ou adaptar o código para rodar em um 
+outro sistema operacional. Temos um único executável para todos os sistemas!
+
+A linguagem Java nasceu com algumas características que são mantidas até hoje.
+    Parecido com C++, Java nasceu sendo parecido com C++ que era a linguagem mais popular na época.
+    Muitas bibliotecas, desde o início o Java possui muitas bibliotecas que ainda muito aumentaram devido as milhares de contribuições da comunidade open source.
+    Multiplataforma, Java é multiplataforma, roda em qualquer sistema operacional desde que exista a máquina virtual Java.
+
+Seja web ou puramente server-side, aplicativo Android ou um antigo applet, Java atende todas essas áreas! No entanto, os sistemas web e Android são os que mais fizeram sucesso
+no mundo Java e mais empregam desenvolvedores.
+
+Qual é a diferença entre o executável do Windows (exe) e o executável do mundo Java (Bytecode)?
+Os executáveis do mundo Java são portáveis, os do mundo Windows não. Lembrando portável significa que podem ser executados em vários sistemas operacionais diferentes
+(Windows, Linux, Mac, etc).
+Os executáveis do mundo Windows podem ser executados diretamente no sistema operacional, os do mundo Java precisam da máquina virtual. Os executáveis Java precisam da máquina
+virtual Java.
+
+O Bytecode é o código fonte" não é verdadeira. O código fonte é para o desenvolvedor entender, o Bytecode foi criado e otimizado para a máquina virtual.
+Existe um conjunto de comandos que a máquina virtual Java entende. Esses comandos também são chamados de opcodes (operation code), e cada opcode possui
+o tamanho de exatamente 1 Byte! E aí temos um opcode de 1 Byte ou, mais simples, Bytecode.
+
+Principais características da linguagem Java
+    Orientado a objetos
+    Parecido com C++
+    Muitas bibliotecas e grande comunidade
+
+Descrevemos
+    A diferença entre o código fonte e o Bytecode
+    O que precisamos para executar o Bytecode é preciso ter a máquina virtual java  
+    Que o Bytecode é independente do sistema operacional
+
+Principais componentes da plataforma Java
+    Java Virtual Machine (JVM)
+    linguagem Java
+    Bibliotecas Java (API)
+
+2 - Instalação e Primeiro Programa
+
+Referente a JDK e JRE
+
+O JRE é o ambiente para executar uma aplicação Java. Caso queira executar uma aplicação Java apenas, basta o JRE (Java Runtime Environment). o JRE (Java Runtime Environment)
+é apenas para executar o Bytecode.
+
+O JDK é o ambiente para executar uma aplicação Java e possui várias ferramentas de desenvolvimento. O JDK são as ferramentas de desenvolvimento (como o compilador)
+mas também tem JRE embutido! o JDK também possui o compilador, mas é muito mais do que isso! Dentro dele vem várias outras ferramentas (para, por exemplo, gerar a documentação)
+e também tem o JRE embutido.
+
+O mundo Java é cheio de siglas com 3 ou 4 letras começando com J. Duas famosas: o JRE e JDK. O primeiro é o ambiente de execução, o segundo são as
+ferramentas de desenvolvimento junto com o ambiente de execução. Simplificando podemos dizer: JDK = JRE + ferramentas de desenvolvimento
+
+Existe uma terceira sigla, JVM (Java Virtual Machine). A responsabilidade da Java Virtual Machine é executar o Bytecode! Então qual é diferença entre JVM e JRE?
+Ambos executam o Bytecode, certo? A resposta é simples: O JRE (o nosso ambiente de execução) contém a JVM, mas também possui um monte de bibliotecas embutidas.
+Ou seja, para rodar uma aplicação Java não basta ter apenas a JVM, também é preciso ter as bibliotecas. Assim podemos simplificar e dizer: JRE = JVM + bibliotecas
+
+É importante entender que você não pode baixar a JVM apenas. Você sempre baixa o JRE que tem a JVM e as bibliotecas em conjunto.
+
+Primeira aplicação
+
+Para começar com desenvolvimento Java e precisamos da entrada de uma aplicação e ela é sempre a função (ou método) main. 
+Essa função/método, é escrita da seguinte forma:
+
+public class Programa {
+
+    public static void main(String[] args) {
+
+
+    }
+
+}
+
+Ou seja, a entrada de uma aplicação Java, por onde ela vai começar a executar é sempre uma função/método public static void main(String[] args).
+
+Sobre a compilação e a execução
+
+Durante a compilação acontece uma verificação sintática do código fonte.
+Na compilação e execução podem aparecer erros.
+A JVM lê e executa o Bytecode.
+O compilador gera o Bytecode caso não tenha nenhum erro sintático no código fonte.
+
+Compilar e executar
+
+Podemos compilar e executar um código java, sem uma IDE, ou seja, sem uma interface grafica. Para isso podemos fazer via prompt de comando o que
+a IDE faria automaticamente, Por exemplo, temos a seguinte entrada:
+
+class Programa {
+
+    public static void main(String[] args) {
+        System.out.println("Funcionou!!");
+    }
+}
+
+para compilar e rodar esse código Java, basta rodarmos as seguintes linhas no prompt
+
+passamos a extensão do arquivo (.java) para o comando javac: Para compilar
+javac Programa.java
+
+E para chamar a JVM usamos apenas o nome da classe (sem extensão):
+java Programa
+
+Com isso será mostrado na tela a mensagem "Olá Mundo".
+
+Onde System.out.println("ola mundo"), irá imprimir algo na tela, mas apenas ele não será suficiente para que o programa compile. 
+Para que nosso código compile, primeiramente envolva-o com uma classe, ficando dessa forma:
+
+public class Programa{
+
+    System.out.println("ola mundo");
+}
+
+Nosso programa ainda não compila, para funcionar, precisamos colocar o método main:
+
+public class Programa{
+
+    public static void main(String[] args){
+
+        System.out.println("ola mundo");
+    }
+}
+
+Após isso salvamos o arquivo como Programa.java em algum diretório. O nome deve ser exatamente igual ao nome da classe criada,
+inclusive as letras maiúsculas e minúsculas! Lembre-se que o Java é case-sensitive.
+
+Agora, compile o código utilizando o compilador de Java da Oracle, chamado de javac. Ele nos dará o bytecode:
+
+javac Programa.java
+
+Após compilado, podemos ver que o bytecode foi gerado com o mesmo nome, mas com .class no final.
+
+Execute o programa já compilado escrevendo:
+
+java Programa
+
+Quando escrevemos apenas java, estamos invocando a máquina virtual para interpretar nosso programa.
+
+Após feito isso, teremos como saída a frase ola mundo.
+
+Vimos:
+Qual é a diferença entre JRE e JDK
+Como compilar um código fonte Java na linha de comando (javac)
+Como executar o Bytecode na linha de comando (java)
+Um programa Java deve estar escrito dentro de uma classe (class)
+Toda instrução Java deve ser finalizada com ;
+Para abrir e fechar um bloco usaremos as chaves {}
+Um programa Java possui uma entrada que é uma função (método) main
+Para imprimir algo no console usamos a instrução System.out.println()
+
+3 - Começando com o Eclipse
+
+Podemos programar em Java utilizando editores de textos e IDEs
+Um IDE é um ambiente integrado de desenvolvimento que centraliza em um único lugar o compilador da linguagem utilizada,
+editor de texto, documentação e tudo que gira em torno da criação de aplicações.
+
+Um IDE é um ambiente integrado de desenvolvimento que centraliza em um único lugar, e NetBeans e Intellij são outros exemplos famosos
+de IDEs Java.
+
+Sobre workspace
+
+Cada projeto do Eclipse fica dentro de um workspace. Um workspace é a pasta padrão que será utilizado para armazenar todos os projetos
+criados com a IDE Eclipse.
+
+Rodando nosso programa no Eclipse
+
+1) Ao inicializarmos o Eclipse, ele nos pedirá para selecionarmos um "workspace", que é onde ficarão armazenados seus projetos. Caso você queira personalizar isso, clique em Browse... e selecione sua pasta. Nesse curso usaremos a própria pasta workspace.
+
+2) Feche a página de Welcome e vamos iniciar o Eclipse da maneira que encontramos ele normalmente.
+
+3) Clique em File e coloque seu cursor sobre a linha new e veja que o Eclipse nos dará algumas opções. Escolha Java project.
+
+4) Nessa janela nova, nomearemos nosso projeto, escolhemos o nome sintaxe-basica, lembre-se de verificar a versão do Java utilizada.
+
+5) Repare que temos um novo projeto na View Package Explorer, guardaremos nosso projeto dentro desta pasta src que foi criada.
+
+6) No diretório src, clique com o botão direito do mouse, coloque o cursor em new e escolha class
+
+7) Nessa nova janela, criaremos a classe com o nome Programa, nesse momento não se preocupe com as diversas opções que o Eclipse nos oferece. Clique em finish e teremos nossa classe Programa.
+
+8) Antes de colocar o tal do System.out.println, escreva o método main. Fique tranquilo, entenderemos melhor o main no decorrer do curso. Nosso código ficará assim:
+
+public class Programa{
+
+    public static void main(String[] args){
+
+        System.out.println("ola mundo");
+    }
+}
+
+9) Repare que durante a escrita, o Eclipse tenta inferir algumas coisas, além de fechar as aspas automaticamente.
+
+10) Para executarmos nosso código, na parte de cima do Eclipse, clique em Run, e depois em Run As e escolha Java Application.
+
+Projeto Java
+
+Executamos nosso programa no Eclipse através do menu Run -> Run as -> Java Application.
+
+Dentro de um projeto Java, criamos uma nova classe através da opção do menu File -> New -> Class.
+
+A saída do nosso programa executado pelo Eclipse é feita através da view console. A view console mostra a saída do programa.
+
+View Navigator
+
+É parecida com o Windows Explorer do Windows ou o Finder do MAC. Ela nos permite ver o diretório do projeto com seus arquivos na integra.
+Mostra mais arquivos, inclusive aqueles omitidos pelo Package Explorer. Podemos selecioná-la através do menu Windows -> Show View -> Navigator
+
+Vimos:
+O papel de um IDE e sua diferença de um editor
+Como fazer o download do Eclipse IDE
+Para que serve um workspace
+O conceito de perspectiva
+Como criar um projeto Java, inclusive classes e como executá-lo.
+Como exibir diferentes views

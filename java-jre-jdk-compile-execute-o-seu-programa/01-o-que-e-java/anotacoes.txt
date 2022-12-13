@@ -1,0 +1,38 @@
+1 - O que é Java
+
+O grande benefício de uma Máquina Virtual Java (JVM), é executar o código independente do sistema operacional. Ou seja, no mundo Java você terá sempre o mesmo "executável"
+ou Bytecode que será executado pela Maquina Virtual Java, totalmente independente do sistema operacional. Assim não é preciso rescrever ou adaptar o código para rodar em um 
+outro sistema operacional. Temos um único executável para todos os sistemas!
+
+A linguagem Java nasceu com algumas características que são mantidas até hoje.
+    Parecido com C++, Java nasceu sendo parecido com C++ que era a linguagem mais popular na época.
+    Muitas bibliotecas, desde o início o Java possui muitas bibliotecas que ainda muito aumentaram devido as milhares de contribuições da comunidade open source.
+    Multiplataforma, Java é multiplataforma, roda em qualquer sistema operacional desde que exista a máquina virtual Java.
+
+Seja web ou puramente server-side, aplicativo Android ou um antigo applet, Java atende todas essas áreas! No entanto, os sistemas web e Android são os que mais fizeram sucesso
+no mundo Java e mais empregam desenvolvedores.
+
+Qual é a diferença entre o executável do Windows (exe) e o executável do mundo Java (Bytecode)?
+Os executáveis do mundo Java são portáveis, os do mundo Windows não. Lembrando portável significa que podem ser executados em vários sistemas operacionais diferentes
+(Windows, Linux, Mac, etc).
+Os executáveis do mundo Windows podem ser executados diretamente no sistema operacional, os do mundo Java precisam da máquina virtual. Os executáveis Java precisam da máquina
+virtual Java.
+
+O Bytecode é o código fonte" não é verdadeira. O código fonte é para o desenvolvedor entender, o Bytecode foi criado e otimizado para a máquina virtual.
+Existe um conjunto de comandos que a máquina virtual Java entende. Esses comandos também são chamados de opcodes (operation code), e cada opcode possui
+o tamanho de exatamente 1 Byte! E aí temos um opcode de 1 Byte ou, mais simples, Bytecode.
+
+Principais características da linguagem Java
+    Orientado a objetos
+    Parecido com C++
+    Muitas bibliotecas e grande comunidade
+
+Descrevemos
+    A diferença entre o código fonte e o Bytecode
+    O que precisamos para executar o Bytecode é preciso ter a máquina virtual java  
+    Que o Bytecode é independente do sistema operacional
+
+Principais componentes da plataforma Java
+    Java Virtual Machine (JVM)
+    linguagem Java
+    Bibliotecas Java (API)

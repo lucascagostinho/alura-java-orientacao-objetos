@@ -1,0 +1,109 @@
+2 - Instalação e Primeiro Programa
+
+Referente a JDK e JRE
+
+O JRE é o ambiente para executar uma aplicação Java. Caso queira executar uma aplicação Java apenas, basta o JRE (Java Runtime Environment). o JRE (Java Runtime Environment)
+é apenas para executar o Bytecode.
+
+O JDK é o ambiente para executar uma aplicação Java e possui várias ferramentas de desenvolvimento. O JDK são as ferramentas de desenvolvimento (como o compilador)
+mas também tem JRE embutido! o JDK também possui o compilador, mas é muito mais do que isso! Dentro dele vem várias outras ferramentas (para, por exemplo, gerar a documentação)
+e também tem o JRE embutido.
+
+O mundo Java é cheio de siglas com 3 ou 4 letras começando com J. Duas famosas: o JRE e JDK. O primeiro é o ambiente de execução, o segundo são as
+ferramentas de desenvolvimento junto com o ambiente de execução. Simplificando podemos dizer: JDK = JRE + ferramentas de desenvolvimento
+
+Existe uma terceira sigla, JVM (Java Virtual Machine). A responsabilidade da Java Virtual Machine é executar o Bytecode! Então qual é diferença entre JVM e JRE?
+Ambos executam o Bytecode, certo? A resposta é simples: O JRE (o nosso ambiente de execução) contém a JVM, mas também possui um monte de bibliotecas embutidas.
+Ou seja, para rodar uma aplicação Java não basta ter apenas a JVM, também é preciso ter as bibliotecas. Assim podemos simplificar e dizer: JRE = JVM + bibliotecas
+
+É importante entender que você não pode baixar a JVM apenas. Você sempre baixa o JRE que tem a JVM e as bibliotecas em conjunto.
+
+Primeira aplicação
+
+Para começar com desenvolvimento Java e precisamos da entrada de uma aplicação e ela é sempre a função (ou método) main. 
+Essa função/método, é escrita da seguinte forma:
+
+public class Programa {
+
+    public static void main(String[] args) {
+
+
+    }
+
+}
+
+Ou seja, a entrada de uma aplicação Java, por onde ela vai começar a executar é sempre uma função/método public static void main(String[] args).
+
+Sobre a compilação e a execução
+
+Durante a compilação acontece uma verificação sintática do código fonte.
+Na compilação e execução podem aparecer erros.
+A JVM lê e executa o Bytecode.
+O compilador gera o Bytecode caso não tenha nenhum erro sintático no código fonte.
+
+Compilar e executar
+
+Podemos compilar e executar um código java, sem uma IDE, ou seja, sem uma interface grafica. Para isso podemos fazer via prompt de comando o que
+a IDE faria automaticamente, Por exemplo, temos a seguinte entrada:
+
+class Programa {
+
+    public static void main(String[] args) {
+        System.out.println("Funcionou!!");
+    }
+}
+
+para compilar e rodar esse código Java, basta rodarmos as seguintes linhas no prompt
+
+passamos a extensão do arquivo (.java) para o comando javac: Para compilar
+javac Programa.java
+
+E para chamar a JVM usamos apenas o nome da classe (sem extensão):
+java Programa
+
+Com isso será mostrado na tela a mensagem "Olá Mundo".
+
+Onde System.out.println("ola mundo"), irá imprimir algo na tela, mas apenas ele não será suficiente para que o programa compile. 
+Para que nosso código compile, primeiramente envolva-o com uma classe, ficando dessa forma:
+
+public class Programa{
+
+    System.out.println("ola mundo");
+}
+
+Nosso programa ainda não compila, para funcionar, precisamos colocar o método main:
+
+public class Programa{
+
+    public static void main(String[] args){
+
+        System.out.println("ola mundo");
+    }
+}
+
+Após isso salvamos o arquivo como Programa.java em algum diretório. O nome deve ser exatamente igual ao nome da classe criada,
+inclusive as letras maiúsculas e minúsculas! Lembre-se que o Java é case-sensitive.
+
+Agora, compile o código utilizando o compilador de Java da Oracle, chamado de javac. Ele nos dará o bytecode:
+
+javac Programa.java
+
+Após compilado, podemos ver que o bytecode foi gerado com o mesmo nome, mas com .class no final.
+
+Execute o programa já compilado escrevendo:
+
+java Programa
+
+Quando escrevemos apenas java, estamos invocando a máquina virtual para interpretar nosso programa.
+
+Após feito isso, teremos como saída a frase ola mundo.
+
+Vimos:
+Qual é a diferença entre JRE e JDK
+Como compilar um código fonte Java na linha de comando (javac)
+Como executar o Bytecode na linha de comando (java)
+Um programa Java deve estar escrito dentro de uma classe (class)
+Toda instrução Java deve ser finalizada com ;
+Para abrir e fechar um bloco usaremos as chaves {}
+Um programa Java possui uma entrada que é uma função (método) main
+Para imprimir algo no console usamos a instrução System.out.println()
