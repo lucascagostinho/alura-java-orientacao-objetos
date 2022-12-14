@@ -1,0 +1,10 @@
+4 - Tipos e variáveis
+
+Podemos criar e definir o valor de uma variável da seguinte forma:
+
+int diasDoMes;
+diasDoMes = 30;
+
+por ser uma linguagem estaticamente tipada é necessário definir o tipo das variáveis. Por isso informamos o int antes de diasDoMes. Além disso,
+para definir ou atribuir um valor a variável no java precisamos usar '='. Temos que lembrar também que é uma convenção da comunidade Java
+as variáveis normalmente serem iniciadas com letras minúsculas.
