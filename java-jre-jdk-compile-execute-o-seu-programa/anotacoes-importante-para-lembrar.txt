@@ -1,0 +1,21 @@
+casting - Conversões de tipos de variáveis
+
+uma vez que estamos tentando atribuir uma variável double dentro de uma variável int, o que não é possível na linguagem Java.
+entretanto, que o inverso é valido, ou seja, podemos atribuir um valor do tipo int dentro de uma variável do tipo double.
+Existe uma forma de fazer com que esse código compile. Para isso usaremos o que chamamos de casting
+
+double salario = 1270.50;
+int valor = (int) salario;
+
+Quando fazemos o casting, estamos pedindo ao Java que ache uma forma de transformar o valor no lado direito do (int), no nosso caso,
+a variável salario, em inteiro. Dessa forma o java transformará double para int.
+
+Basicamente, para as variáveis primitivas, o casting nada mais é do que fazer com que essa conversão seja feita quando ela não é feita
+de maneira automática.
+
+Esta propriedade se dá porque o Java faz conversão implícita de um tipo menor para os tipos "maiores". De inteiro para double, por exemplo.
+
+O contrário não é verdade porque existe perda de dados quando é feita a conversão. Acarretando em um "type mismatch" mostrando que esta instrução é de tipos incompatíveis.
+
+Para fazer uma conversão onde pode haver perda de informações é necessário fazer um type casting. 
+

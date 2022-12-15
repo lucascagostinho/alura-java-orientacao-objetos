@@ -1,0 +1,61 @@
+5 Trabalhando com caracteres
+
+uma variável do tipo char, é declarada da seguinte forma:
+
+char letra = 'a';
+
+caso fossemos imprimir essa variável em um System.out.println(letra), nossa saída será: a
+
+o tipo char guarda apenas um caractere da tabela unicode, por isso, quando passamos um valor numérico,
+teremos como saída o caractere correspondente ao número na tabela unicode. Por exemplo:
+
+char valor = 65;  // Compila!
+System.out.println(valor);
+
+A saída do nosso segundo System.out.println será : A
+
+valor = valor + 1;         // Não compila!
+System.out.println(valor);
+
+Nosso código não compila, quando escrevemos essa soma, o Java automaticamente transforma o resultado para o maior tipo,
+que nesse caso é int, já que o número 1 é um inteiro.
+
+um casting para que esse código compile, para isso devemos escrever:
+
+valor = (char) (valor + 1);         // Compila!
+System.out.println(valor);
+
+Repare que envolvemos a soma com parênteses, dessa forma, dizemos para o Java que queremos transformar o resultado dessa soma em char.
+
+uma variável do tipo String, repare que esse tipo é diferente dos que tinhamos usado até o momento, além disso, escrevemos com a inicial maiúscula.
+
+String palavra = "alura cursos online de tecnologia";
+
+Para String, usaremos obrigatóriamente aspas duplas.
+
+Concatene sua String com o número 2020 da seguinte forma:
+
+palavra = palavra + 2020;
+System.out.println(palavra);
+
+Repare que o número 2020 aparece no final da frase, isso acontece porque que o Java converte automaticamente o número para String,
+diferente do que acontecia com os tipos primitivos que vimos anteriormente.
+
+String frase = "Estou sempre disposto a aprender novas tecnologias";
+char letra = 'a';
+
+Lembre-se, uma String é declarada com aspas duplas " e pode ter zero ou mais caracteres.
+Um char é declarado com aspas simples ' e pode usar apenas um caractere!
+
+String parcela1 = "10";
+String parcela2 = "20";
+
+System.out.println(parcela1 + parcela2);
+
+o resultado será 1020.
+O resultado será a concatenação das duas parcelas.
+
+O conceito e como declarar char e String
+Como concatenar Strings
+Atalho para criação da main
+Variáveis guardam valores e não referências.

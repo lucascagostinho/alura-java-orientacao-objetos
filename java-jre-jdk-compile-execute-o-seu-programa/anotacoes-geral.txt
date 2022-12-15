@@ -211,3 +211,222 @@ Para que serve um workspace
 O conceito de perspectiva
 Como criar um projeto Java, inclusive classes e como executá-lo.
 Como exibir diferentes views
+
+4 - Tipos e variáveis
+
+Podemos criar e definir o valor de uma variável da seguinte forma:
+
+int diasDoMes;
+diasDoMes = 30;
+
+ou, criando a variável e inicializando-a na mesma linha
+
+int idade = 37;
+
+por ser uma linguagem estaticamente tipada é necessário definir o tipo das variáveis. Por isso informamos o int antes de diasDoMes. Além disso,
+para definir ou atribuir um valor a variável no java precisamos usar '='. Temos que lembrar também que é uma convenção da comunidade Java
+as variáveis normalmente serem iniciadas com letras minúsculas.
+
+Para imprimir o valor da variável, usamos o método println, da classe System, da seguinte forma:
+
+System.out.println(idade);
+
+Repare que quando queremos imprimir o valor que está guardado na variável, não devemos usar as aspas. Assim o valor contido dentro da variável
+irá ser apresentada no console.
+
+Podemos usar operadores aritméticos:
+
++ para Soma
+
+- para Subtração
+
+* para Multiplicação
+
+/ para Divisão
+
+Podemos concatenar valores no System.out.println usando o sinal +, dessa forma faça:
+
+System.out.println("a idade é "+ idade + ", parabéns!");
+
+Assim irá sair o texto que está entre aspas e a variável idade irá imprimir o valor contido nela.
+
+Operações entre números
+
+Vimos que é possível fazer operações entre números, podemos até fazer operações aritméticas com variáveis de tipos diferentes
+como multiplicar um inteiro por um número de ponto flutuante (int e double). Por Exemplo:
+
+int dia = 4;
+int outroDia = 4 + dia;
+System.out.println(outroDia);
+Deve imprimir 8
+
+não há dúvida ao somar 2 numeros inteiros.
+
+int brindes = 15;
+int pessoas = 2;
+System.out.println(brindes / pessoas);
+Deve imprimir 7.5
+
+Este código é o errado. Pois quando fazemos operações entre inteiros o resultado sempre será inteiro e não de ponto flutuante.
+O resultado na verdade seria 7.
+
+double peso = 4.0;
+int quantidade = 10;
+System.out.println(peso * quantidade);
+Deve imprimir 40.0
+
+Quando fazemos operações entre inteiros e doubles o resultado é um double.
+
+double preco = 5.5;
+int ingressos = 4;
+System.out.println(preco * ingressos);
+Deve imprimir 22.0
+
+quando fazemos operações entre inteiros e doubles o resultado é um double.
+
+Declaramos uma variável salario com o valor de 1250.70, dessa forma:
+
+double salario = 1250.70;
+
+Se salario fosse do tipo int receberíamos um erro, já que temos casas decimais.
+
+não podemos colocar um valor com ponto flutuante dentro de uma variável do tipo int, teste:
+
+int valor = 12.5;             //não compila.
+int valor2 = 0.0;             //não compila.
+double teste = 125.50;        // compila
+int valor3 = teste;           //não compila.
+
+O Java é bastante tipado, então o valor 0.0 no nosso código, não compilará.
+
+Por Exemplo:
+
+int divisao = 5 / 2;
+System.out.println(divisao);
+
+Nossa saída será 2.
+
+É importante ressaltar que quando fazemos uma divisão não exata, mas estamos dividindo números inteiros, o Java sempre truncará o resultado. Nesse exemplo a saída será sempre 2.
+
+Se a variável divisao fosse do tipo double, teríamos o mesmo problema, a única diferença seria que nossa saída teria casa decimal: 2.0
+
+coloque em um dos valores da divisão com alguma casa decimal, além de mudar o tipo da variável para double:
+
+double divisao = 5.0 / 2;
+
+Agora sim obteremos a saída esperada: 2.5
+
+Conversões e outros tipos
+
+uma vez que estamos tentando atribuir uma variável double dentro de uma variável int, o que não é possível na linguagem Java.
+entretanto, que o inverso é valido, ou seja, podemos atribuir um valor do tipo int dentro de uma variável do tipo double.
+Existe uma forma de fazer com que esse código compile. Para isso usaremos o que chamamos de casting
+
+double salario = 1270.50;
+int valor = (int) salario;
+
+Quando fazemos o casting, estamos pedindo ao Java que ache uma forma de transformar o valor no lado direito do (int), no nosso caso,
+a variável salario, em inteiro. Dessa forma o java transformará double para int.
+
+System.out.println(valor);
+
+A saída será 1270.
+
+Basicamente, para as variáveis primitivas, o casting nada mais é do que fazer com que essa conversão seja feita quando ela não é feita
+de maneira automática.
+
+No momento, nossa variável salario é do tipo double, não é a melhor escolha
+
+double valor1 = 0.2;
+double valor2 = 0.1;
+double total = valor1 + valor2;
+
+System.out.println(total);
+
+A saída será 0.3000000004
+
+Imaginamos que nossa saída seria 0.3, mas obtemos um número completamente diferente.
+
+Devido essa inconsistência, double não seria a melhor escolha para guardarmos salário.
+Existem outras alternativas melhores que veremos em outros cursos.
+
+Vamos testar também o tipo float
+
+float pontoFlutuante = 3.14;
+
+Dessa forma, teremos um erro, já que para o Java, 3.14 é um double. Esse é o mesmo problema que tivemos quando tentamos
+guardar um double dentro de um int . No tipo double podemos armazenar 64 bits, no float e no int apenas 32 bits.
+Isso pode acarretar em perda de informação, para que esse código funcione, podemos fazer o casting, colocando (float) na frente de 3.14,
+mas faremos de uma outra forma.
+
+valor 3.14 é um float, para isso coloque f ao final do número
+
+float pontoFlutuante = 3.14f;
+
+Nesta aula iniciamos nosso aprendizado com variáveis e tipos primitivos do Java. Os tipos vistos com mais detalhe foram int (inteiro) e double (decimal). Que usamos para fazer operações aritméticas e também concatenar com texto.
+
+Durante o capítulo falamos sobre boas práticas na hora de nomear classes e também variáveis. Iniciamos as classes com letra maiúscula e as nossas funções e variáveis com letras minúsculas. Vamos falar mais sobre isto no futuro.
+
+Foi possível entender um pouco de type casting e como podemos passar um valor de um tipo para uma variável de outro. Para alguns casos nós não precisamos fazer nada, pois o casting é implícito e em outros precisamos deixar claro para o compilador que sabemos o que estamos fazendo, mostrando entre parênteses o tipo que queremos que seja usado.
+
+5 Trabalhando com caracteres
+
+uma variável do tipo char, é declarada da seguinte forma:
+
+char letra = 'a';
+
+caso fossemos imprimir essa variável em um System.out.println(letra), nossa saída será: a
+
+o tipo char guarda apenas um caractere da tabela unicode, por isso, quando passamos um valor numérico,
+teremos como saída o caractere correspondente ao número na tabela unicode. Por exemplo:
+
+char valor = 65;  // Compila!
+System.out.println(valor);
+
+A saída do nosso segundo System.out.println será : A
+
+valor = valor + 1;         // Não compila!
+System.out.println(valor);
+
+Nosso código não compila, quando escrevemos essa soma, o Java automaticamente transforma o resultado para o maior tipo,
+que nesse caso é int, já que o número 1 é um inteiro.
+
+um casting para que esse código compile, para isso devemos escrever:
+
+valor = (char) (valor + 1);         // Compila!
+System.out.println(valor);
+
+Repare que envolvemos a soma com parênteses, dessa forma, dizemos para o Java que queremos transformar o resultado dessa soma em char.
+
+uma variável do tipo String, repare que esse tipo é diferente dos que tinhamos usado até o momento, além disso, escrevemos com a inicial maiúscula.
+
+String palavra = "alura cursos online de tecnologia";
+
+Para String, usaremos obrigatóriamente aspas duplas.
+
+Concatene sua String com o número 2020 da seguinte forma:
+
+palavra = palavra + 2020;
+System.out.println(palavra);
+
+Repare que o número 2020 aparece no final da frase, isso acontece porque que o Java converte automaticamente o número para String,
+diferente do que acontecia com os tipos primitivos que vimos anteriormente.
+
+String frase = "Estou sempre disposto a aprender novas tecnologias";
+char letra = 'a';
+
+Lembre-se, uma String é declarada com aspas duplas " e pode ter zero ou mais caracteres.
+Um char é declarado com aspas simples ' e pode usar apenas um caractere!
+
+String parcela1 = "10";
+String parcela2 = "20";
+
+System.out.println(parcela1 + parcela2);
+
+o resultado será 1020.
+O resultado será a concatenação das duas parcelas.
+
+O conceito e como declarar char e String
+Como concatenar Strings
+Atalho para criação da main
+Variáveis guardam valores e não referências.
