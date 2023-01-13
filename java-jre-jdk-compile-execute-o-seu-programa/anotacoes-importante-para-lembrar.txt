@@ -1,4 +1,4 @@
-casting - Conversões de tipos de variáveis
+#casting - Conversões de tipos de variáveis
 
 uma vez que estamos tentando atribuir uma variável double dentro de uma variável int, o que não é possível na linguagem Java.
 entretanto, que o inverso é valido, ou seja, podemos atribuir um valor do tipo int dentro de uma variável do tipo double.
@@ -17,5 +17,5 @@ Esta propriedade se dá porque o Java faz conversão implícita de um tipo menor
 
 O contrário não é verdade porque existe perda de dados quando é feita a conversão. Acarretando em um "type mismatch" mostrando que esta instrução é de tipos incompatíveis.
 
-Para fazer uma conversão onde pode haver perda de informações é necessário fazer um type casting. 
+Para fazer uma conversão onde pode haver perda de informações é necessário fazer um type casting.
 

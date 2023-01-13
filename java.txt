@@ -1,0 +1,107 @@
+# Java
+
+# Java: o que é, linguagem e um Guia para iniciar na tecnologia
+
+Artigo da Alura sobre JAVA
+
+https://www.alura.com.br/artigos/java
+
+# 2022 Developer Survey
+Pesquisa do Stack Overflow mostrando as tecnologias, áreas e locais de estudo para programação mais utilizados
+https://survey.stackoverflow.co/2022/#section-most-popular-technologies-other-tools
+
+# Ecossistema Java revisitado – Hipsters Ponto Tech #313
+Abaixo temos um episódio do Hipsters.Tech que falar sobre o Ecossistema Moderno em Java!
+Apresentando o que tem de novo por aí, frameworks mais usados, como deploy é feito, o que acontece no dia a dia de pessoas que desenvolvem em Java.
+https://open.spotify.com/episode/0Gi0MlOlG4qmNfUFBr9Xh2?go=1&sp_cid=bfb15241edd83025ad67dd5611163d71&utm_source=embed_player_p&utm_medium=desktop&nd=1
+
+# O que é o Java? #HipstersPontoTube
+Vídeo com um bate papo sobre JAVA
+https://www.youtube.com/watch?v=90NcVNsKGik
+
+# Java, Oracle e Cloud – Hipsters Ponto Tech #279
+Oracle, Java, Cloud e banco de dados.
+Certamente você já ouviu falar dessas tecnologias que a gente costuma usar no dia a dia de pessoa desenvolvedora.
+No episódio de hoje do Hipsters Ponto Tech vamos falar de uma forma muito interessante como essas coisas estão interligadas, como a Oracle está trabalhando com isso,
+e vamos falar falar também sobre o programa de educação da Oracle em parceria com a Alura, o Oracle One.
+https://open.spotify.com/episode/3SqSrNuM7yaDWxT6SF0i5z?go=1&sp_cid=bfb15241edd83025ad67dd5611163d71&utm_source=embed_player_p&utm_medium=desktop&nd=1
+
+# Java é lento? JIT e Otimizações na Java Virtual Machine | #AluraMais
+Abaixo vídeo sobre a compilação do código java
+https://www.youtube.com/watch?v=rrhO_P0IM3s
+
+# ONE - Oracle Next Education
+O ONE é um programa de educação e empregabilidade com objetivo social de capacitar pessoas em tecnologia e conectá-las com o mercado de trabalho por meio de empresas parceiras.
+O curso é 100% online e totalmente gratuito, feito para quem não teve acesso à educação de qualidade e deseja transformar a sua realidade social.
+O programa abre as inscrições 3 vezes ao ano. Cada turma cumpre uma jornada de 6 meses, divididos em 4 trilhas disponibilizadas na plataforma – ao todo são mais de 560 horas de conteúdo.
+https://www.oracle.com/br/education/oracle-next-education/
+
+# TechGuide.sh
+A Alura criou o TechGuide.sh para ajudar na sua jornada de aprendizado. Um mapeamento das principais tecnologias demandadas pelo mercado, com nossas sugestões e opiniões.
+https://techguide.sh/pt-BR/path/java/java-fundamentals/
+https://github.com/alura/techguide
+https://github.com/alura/techguide/blob/main/_data/downloadFiles/PT_BR/java.md
+
+# Como desenvolver boas práticas de programação? com Fabio Akita | #HipstersPontoTube
+https://youtu.be/GUanHEGlje4
+
+# Flutter e Java no Serpro – Hipsters On The Road #59
+Sem saber, você provavelmente já usou algum serviço do Serpro. Bora descobrir o que tem por trás de tecnologia na implementação da Carteira Digital de Trânsito!
+https://open.spotify.com/episode/4y26FYrnrqDABZEkHbnQCG?go=1&sp_cid=bfb15241edd83025ad67dd5611163d71&utm_source=embed_player_p&utm_medium=desktop&nd=1
+
+# Práticas de Orientação a Objetos – Hipsters #129
+E essa tal de orientação objetos? Código limpo? SOLID? Fácil de dar manutenção? E os design patterns? Domain Driven?
+Tem muita coisa relacionada a esse conceito e o episódio consegue passar por vários deles... mas não todos :)
+https://open.spotify.com/episode/09Aje0Xel86kZp6GasfGyD?go=1&sp_cid=bfb15241edd83025ad67dd5611163d71&utm_source=embed_player_p&utm_medium=desktop&nd=1
+
+# Saiba tudo sobre o IDE - Integrated Development Environment
+Guia da Alura sobre IDE
+https://www.alura.com.br/artigos/o-que-e-uma-ide
+
+# Certificação Java
+Artigo da Alura sobre Certificação Java
+https://www.alura.com.br/artigos/certificacao-java-vale-a-pena-estudar
+
+# Vale a pena fazer uma certificação? #HipstersPontoTube
+Vídeo da Alura sobre certificação
+https://youtu.be/IkPh53jDnwo
+
+# Dev em T: programação, carreira e tipos de perfil | #HipstersPontoTube
+Vídeo mostrando qual o conceito de aprendizado de um Dev em T
+https://youtu.be/_nCESq0ggRg
+
+# Será que eu faço uma faculdade de tecnologia? com Mikaeri Ohana | #HipstersPontoTube
+Vídeo falando sobre fazer faculdade de tecnologia
+https://youtu.be/pILkiHUElpQ
+
+# Os MELHORES livros de tecnologia para ler em Programação com Roberta Arcoverde | #HipstersPontoTube
+Vídeo mostrando alguns livros legais para estudar tecnologias
+https://youtu.be/RvWQQRjz1Pw
+
+# Comunidade GUJ
+Comunidade o qual podemos encontrar vários foruns sobre Desenvolvimento JAVA
+https://www.guj.com.br/
+
+# Comunidades em tecnologia | Hipsters.Talks
+Live sobre Comunidades de Tecnologia
+https://youtu.be/rq9jMFxw9JQ
+
+# Vale a pena participar de comunidades de tecnologia? #HipstersPontoTube
+Vídeo sobre Comunidades de Tecnologia
+https://youtu.be/jGI-fZZYH-Y
+
+# Como aprender melhor? Com Diogo Pires | #HipstersPontoTube
+Vídeo muito legal de um bate papo com métodos para melhor aprender
+https://youtu.be/uOagLB3uyeU
+
+# Apostila de Java e Orientação a Objetos
+https://www.alura.com.br/apostila-java-orientacao-objetos
+
+# Apostila de Java para Desenvolvimento Web
+https://www.alura.com.br/apostila-java-web
+
+# Como fazer um bom portfólio em tecnologia com Diogo Pires | #HipstersPontoTube
+https://youtu.be/gu1OXrirC0U
+
+# 5 projetos pra quem está na carreira tech com Mario Souto | HipstersPontoTube
+https://youtu.be/nckXBdyqHVc
