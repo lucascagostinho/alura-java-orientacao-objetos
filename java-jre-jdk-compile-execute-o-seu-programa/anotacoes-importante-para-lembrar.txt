@@ -19,3 +19,10 @@ O contrário não é verdade porque existe perda de dados quando é feita a conv
 
 Para fazer uma conversão onde pode haver perda de informações é necessário fazer um type casting.
 
+#atribuição ou comparação de valor
+
+No Java, = atribui, enquanto == compara. Em boolean, no caso de acompanhado == true, o próprio acompanhado já é um valor booleano, portanto, == true não é necessário.
+
+#operadores lógicos de comparação
+
+O operador lógico AND é representado pelos caracteres && e o OR pelo ||.

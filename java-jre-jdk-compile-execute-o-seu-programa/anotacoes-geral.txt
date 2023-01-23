@@ -430,3 +430,140 @@ O conceito e como declarar char e String
 Como concatenar Strings
 Atalho para criação da main
 Variáveis guardam valores e não referências.
+
+6 - Praticando Condicionais
+
+6 - Praticando Condicionais
+
+Testes com IF
+
+ criaremos uma classe e nessa classe temos com uma variável inteira idade, inicializada na mesma linha:
+
+ public class TestaCondicional {
+
+    public static void main(String[] args) {
+        System.out.println("testando condicionais");
+        int idade = 20;
+        if (idade >= 18) {
+            System.out.println("você tem mais de 18 anos");
+            System.out.println("seja bem vindo");
+        }
+    }
+}
+
+Até aqui, nenhuma grande novidade. Neste caso, há duas instruções no bloco do if
+
+Para o else, alteraremos idade para que se receba 16, e digitaremos
+
+public static void main(String[] args) {
+        System.out.println("testando condicionais");
+        int idade = 16;
+        if (idade >= 18) {
+            System.out.println("você tem mais de 18 anos");
+            System.out.println("seja bem vindo");
+        } else {
+            System.out.println("infelizmente você não pode entrar");
+        }
+    }
+
+Com isso, veremos a impressão de infelizmente você não pode entrar no Console. Para o caso da pessoa estar acompanhada, ela poder entrar, então acrescentaremos int quantidadePessoas = 3;, e um if após else. Em seguida, incluiremos outro else para o caso da pessoa ter menos de 18 e estar desacompanhada:
+
+int idade = 16;
+        int quantidadePessoas = 3;
+
+        if (idade >= 18) {
+            System.out.println("você tem mais de 18 anos");
+            System.out.println("seja bem vindo");
+        } else {
+            if(quantidadePessoas >= 2) {
+                System.out.println("você não tem 18, mas " + "pode entrar, pois está acompanhado");
+            } else {
+            System.out.println("infelizmente você não pode entrar");
+            }
+        }
+
+Vamos explorar um pouco mais o funcionamento do if, para o qual criaremos mais uma classe. É recomendado criá-las para termos um histórico do que está sendo montado, passo a passo. Em TestaCondicional2, teremos o código mais ou menos parecido com o que estávamos vendo até então:
+
+public class TestaCondicional2 {
+    public static void main(String[] args) {
+        System.out.println("testando condicionais");
+        int idade = 16;
+        int quantidadePessoas = 3;
+
+        if (idade >= 18) {
+            System.out.println("você tem mais de 18 anos");
+            System.out.println("seja bem vindo");
+        } else {
+            if(quantidadePessoas >= 2) {
+                System.out.println("você não tem 18, mas " + "pode entrar, pois está acompanhado");
+            } else {
+            System.out.println("infelizmente você não pode entrar");
+            }
+        }
+    }
+}
+
+Porém, não é muito legal quando o código tem muitos ifs e elses encadeados, algo academicamente denominado complexidade ciclomática ou complexidade condicional. Neste nosso exemplo, poderíamos juntar os casos em que a pessoa tem mais de 18 anos e está acompanhada em uma condicional única.
+
+Para isso, utilizaremos o operador ou, || - no Java, não existe or ou and como palavras chave.
+
+public class TestaCondicional2 {
+    public static void main(String[] args) {
+        System.out.println("testando condicionais");
+        int idade = 16;
+        int quantidadePessoas = 3;
+
+        if (idade >= 18 || quantidadePessoas >= 2) {
+            System.out.println("seja bem vindo");
+        } else {
+            System.out.println("infelizmente você não pode entrar");
+        }
+    }
+}
+
+Para este operador, basta apenas uma das condições ser true. Há também o e, ou &&, para quando houver necessidade de se ter mais de 18 anos e estar acompanhado, por exemplo. Isto é, se mantivermos idade como 16 e quantidadePessoas = 1;, obteremos infelizmente você não pode entrar.
+
+Aprendemos sobre tipos de variáveis como o int e o double, para inteiros e pontos flutuantes, respectivamente, o char para quando se usa apenas um caractere, entre outros. Além deles, existe o boolean, palavra chave do Java que é um tipo de variável que só aceita true (verdadeiro) ou false (falso), e fazem parte das palavras reservadas do Java.
+
+public class TestaCondicional2 {
+    public static void main(String[] args) {
+        System.out.println("testando condicionais");
+        int idade = 16;
+        boolean acompanhado = true;
+
+        if (idade >= 18 && acompanhado) {
+            System.out.println("seja bem vindo");
+        } else {
+            System.out.println("infelizmente você não pode entrar");
+        }
+    }
+}
+
+No Java, = atribui, enquanto == compara. Em boolean, no caso de acompanhado == true, o próprio acompanhado já é um valor booleano, portanto, == true não é necessário.
+
+O que também aparece com certa frequência é, à direita do boolean, colocarmos uma expressão booleana como idade >= 18 && acompanhado. Sendo assim, poderíamos usar simplesmente boolean acompanhado = quantidadePessoas >= 2;, o que fará com que se conclua se a pessoa está acompanhada ou não. Com a idade sendo 20, se rodarmos o código, obteremos seja bem vindo.
+
+public class TestaCondicional2 {
+    public static void main(String[] args) {
+        System.out.println("testando condicionais");
+        int idade = 20;
+                int quantidadePessoas = 3;
+        boolean acompanhado = quantidadePessoas >= 2;
+
+                System.out.println("valor de acompanhado = " + acompanhado);
+
+        if (idade >= 18 && acompanhado) {
+            System.out.println("seja bem vindo");
+        } else {
+            System.out.println("infelizmente você não pode entrar");
+        }
+    }
+}
+
+int idade = 68;
+boolean ehIdoso = idade >= 65;
+
+Executando esse código corretamente dentro de um método main, qual será o valor da variável ehIdoso?
+
+true
+
